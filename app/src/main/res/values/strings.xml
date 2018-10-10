@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">KutreCalc</string>
+    <string name="operando_1">Operando 1</string>
+    <string name="operando_2">Operando 2</string>
+    <string name="resultado">Resultado</string>
+    <string name="calcula">Calcula</string>
+    <string name="multiplica">Multiplica</string>
+    <string name="resta">Resta</string>
+    <string name="suma">Suma</string>
+    <string name="divide">Divide</string>
+</resources>

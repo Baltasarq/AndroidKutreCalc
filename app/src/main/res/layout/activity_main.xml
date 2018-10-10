@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_margin="10dp"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:padding="10dp"
+            android:textAppearance="@style/Base.TextAppearance.AppCompat.Medium"
+            android:layout_weight=".25"
+            android:text="@string/operando_1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <EditText   android:id="@+id/edOp1"
+            android:gravity="end"
+            android:padding="10dp"
+            android:layout_weight=".75"
+            android:inputType="numberDecimal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_margin="10dp"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:padding="10dp"
+            android:textAppearance="@style/Base.TextAppearance.AppCompat.Medium"
+            android:layout_weight=".25"
+            android:text="@string/operando_2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <EditText   android:id="@+id/edOp2"
+            android:gravity="end"
+            android:padding="10dp"
+            android:layout_weight=".75"
+            android:inputType="numberDecimal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:gravity="center_horizontal"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <RadioButton    android:id="@+id/rbSuma"
+            android:text="@string/suma"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <RadioButton    android:id="@+id/rbResta"
+            android:text="@string/resta"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <RadioButton    android:id="@+id/rbMultiplica"
+            android:text="@string/multiplica"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <RadioButton    android:id="@+id/rbDivide"
+            android:text="@string/divide"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_margin="10dp"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:padding="10dp"
+            android:textAppearance="@style/Base.TextAppearance.AppCompat.Medium"
+            android:layout_weight=".25"
+            android:text="@string/resultado"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <TextView   android:id="@+id/lblResultado"
+            android:textAppearance="@style/Base.TextAppearance.AppCompat.Large"
+            android:gravity="end"
+            android:textAlignment="textEnd"
+            android:text="0.0"
+            android:padding="10dp"
+            android:layout_weight=".75"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:gravity="center_horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <Button     android:id="@+id/btCalc"
+            android:text="@string/calcula"
+            android:textAppearance="@style/Base.TextAppearance.AppCompat.Large"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+
+</LinearLayout>
